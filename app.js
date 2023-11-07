@@ -14,4 +14,6 @@ app.get('*', (req, res) => {
 	res.sendFile(__dirname + '/public/404.html');
 });
 
-app.listen(port, () => `Example app listening at http://localhost:${port}`);
+app.listen(port, () => {
+	`Example app listening at http://localhost:${port}`;
+});
