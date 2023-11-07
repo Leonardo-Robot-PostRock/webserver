@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const port = 8080;
 
 //Middlewares
 //Servir contenido estático
@@ -13,4 +14,4 @@ app.get('*', (req, res) => {
 	res.sendFile(__dirname + '/public/404.html');
 });
 
-app.listen(8080);
+app.listen(port, () => `Example app listening at http://localhost:${port}`);
